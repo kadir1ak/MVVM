@@ -20,7 +20,7 @@ namespace MVVM.ViewModels
 
         public PhoneViewModel()
         {
-
+            Phone = new PhoneModel("Samsung Galaxy S21 Ultra 5G", "Samsung", 999);
         }
     }
 }

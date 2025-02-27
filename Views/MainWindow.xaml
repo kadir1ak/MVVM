@@ -9,11 +9,13 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Window.DataContext>
-        <viewmodels:PeopleViewModel />
+        <viewmodels:MainViewModel />
     </Window.DataContext>
 
     <StackPanel>
-        <views:PeopleView DataContext="{Binding}" />
-        <views:PeopleView DataContext="{Binding}" />
+        <!-- DataContext'i MainViewModel altındaki PeopleVM'ye bağla -->
+        <views:PeopleView DataContext="{Binding PeopleVM}" HorizontalAlignment="Stretch"/>
+        <!-- DataContext'i MainViewModel altındaki PhoneVM'ye bağla -->
+        <views:PhoneView DataContext="{Binding PhoneVM}" HorizontalAlignment="Stretch"/>
     </StackPanel>
 </Window>

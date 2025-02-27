@@ -14,9 +14,9 @@ namespace MVVM.Models
 
         public string Company { get; set; }
 
-        public int Price { get; set; }
+        public double Price { get; set; }
 
-        public PhoneModel(string title, string company, int price)
+        public PhoneModel(string title, string company, double price)
         {
             Title = title;
             Company = company;
